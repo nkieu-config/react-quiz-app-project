@@ -1,0 +1,159 @@
+{
+  "questions": [
+    {
+      "question": "What is the primary purpose of the 'useState' hook in React?",
+      "options": [
+        "To perform side effects in function components",
+        "To add stateful logic to function components",
+        "To create a reference to a DOM element",
+        "To manage complex state logic with a reducer"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How do you provide an initial value to a state variable using 'useState'?",
+      "options": [
+        "By passing it as the first argument to 'useState'",
+        "Using a 'defaultValue' prop",
+        "By calling a separate 'setInitialState' function",
+        "It's automatically set to 'null'"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which hook would you use to perform an action, like fetching data, when a component mounts?",
+      "options": ["useState", "useRef", "useEffect", "useReducer"],
+      "correctOption": 2,
+      "points": 20
+    },
+    {
+      "question": "What does an empty dependency array '[]' in 'useEffect' signify?",
+      "options": [
+        "The effect runs on every re-render",
+        "The effect runs only once when the component mounts",
+        "The effect never runs",
+        "The effect runs when the component unmounts"
+      ],
+      "correctOption": 1,
+      "points": 20
+    },
+    {
+      "question": "What is the main use case for the 'useRef` hook?",
+      "options": [
+        "To update the component's state",
+        "To cause a re-render",
+        "To access and interact with DOM elements directly",
+        "To handle component lifecycle events"
+      ],
+      "correctOption": 2,
+      "points": 20
+    },
+    {
+      "question": "Does changing the value of a 'useRef' object (e.g., 'myRef.current = 10') trigger a re-render?",
+      "options": [
+        "Yes, always",
+        "Only if the new value is different",
+        "No, it does not trigger a re-render",
+        "Only in development mode"
+      ],
+      "correctOption": 2,
+      "points": 30
+    },
+    {
+      "question": "Which hook is generally preferred for managing complex state logic that involves multiple sub-values?",
+      "options": ["useState", "useEffect", "useReducer", "useRef"],
+      "correctOption": 2,
+      "points": 20
+    },
+    {
+      "question": "What are the two primary arguments that a reducer function (used with 'useReducer') accepts?",
+      "options": [
+        "props and state",
+        "state and action",
+        "state and a callback function",
+        "event and state"
+      ],
+      "correctOption": 1,
+      "points": 30
+    },
+    {
+      "question": "In a 'useReducer' setup, what function do you call to update the state?",
+      "options": [
+        "The 'update' function",
+        "The 'setState' function",
+        "The 'dispatch' function",
+        "The 'reducer' function directly"
+      ],
+      "correctOption": 2,
+      "points": 20
+    },
+    {
+      "question": "When 'useEffect' returns a function, what is that function's purpose?",
+      "options": [
+        "To run before the main effect logic",
+        "It's a callback for when the effect is successful",
+        "It serves as a cleanup function to run when the component unmounts or before the effect runs again",
+        "To return a value from the effect"
+      ],
+      "correctOption": 2,
+      "points": 30
+    },
+    {
+      "question": "If you need the new state to be calculated based on the previous state, what should you pass to the state setter function from 'useState'?",
+      "options": [
+        "The new state value directly",
+        "An object with a 'value' key",
+        "A callback function that receives the previous state",
+        "A 'Promise' that resolves to the new state"
+      ],
+      "correctOption": 2,
+      "points": 30
+    },
+    {
+      "question": "What will 'useRef(initialValue)' return?",
+      "options": [
+        "The initial value",
+        "A stateful value and a function to update it",
+        "A memoized callback function",
+        "A mutable object with a `.current` property"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "To avoid re-running an effect on every render, what must you provide to 'useEffect'?",
+      "options": [
+        "A callback function",
+        "A conditional 'if' statement inside the effect",
+        "A dependency array",
+        "An empty object '{}'"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "When is 'useReducer' a better choice than 'useState'?",
+      "options": [
+        "For simple boolean or string states",
+        "When state logic is complex and involves transitions, or when the next state depends on the previous one.",
+        "When you never need to update the state",
+        "When you want to access a DOM node"
+      ],
+      "correctOption": 1,
+      "points": 30
+    },
+    {
+      "question": "What are the two values returned by the 'useState' hook in an array destructuring?",
+      "options": [
+        "The state and the previous state",
+        "A ref and a state value",
+        "The current state value and a function to update it",
+        "A dispatch function and the initial state"
+      ],
+      "correctOption": 2,
+      "points": 10
+    }
+  ]
+}
