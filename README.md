@@ -10,7 +10,16 @@ An interactive and dynamic quiz app built with React. Test your React knowledge 
 
 ## 📸 Screenshots
 
-<img src="public/screenshot.png" alt="React Quiz Screenshot" width="100%">
+<table>
+  <tr>
+    <td>
+      <img src="public/screenshot.png" alt="React Quiz Screenshot" width="100%">
+    </td>
+    <td>
+      <img src="public/screenshot_responsive.png" alt="Responsive Screenshot" width="100%">
+    </td>
+  </tr>
+</table>
 
 ---
 
