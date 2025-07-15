@@ -100,9 +100,11 @@ export default function App() {
   );
 
   useEffect(() => {
-    fetch("http://localhost:8000/questions")
+    fetch("/data/questions.json")
       .then((res) => res.json())
-      .then((data) => dispatch({ type: "dataReceived", payload: data }))
+      .then((data) =>
+        dispatch({ type: "dataReceived", payload: data.questions })
+      )
       .catch((err) => {
         console.error(err);
         dispatch({ type: "dataFailed" });
