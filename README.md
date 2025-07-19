@@ -41,6 +41,9 @@ This project was developed to strengthen core React concepts, particularly:
   - `useState` for local UI state
   - `useReducer` for managing complex app state
   - `useEffect` for side effects and timers
+- **React Context API**:
+  - Used to manage and share global quiz state across the app
+  - Eliminated prop drilling and made components more reusable
 - **Component Composition**: Logical UI broken down into reusable components
 - **Custom Logic**: Quiz logic implemented with conditional rendering and reducer actions
 - **Dynamic Styling**: Visual feedback based on correct/incorrect answers
