@@ -1,21 +1,19 @@
 import { useEffect } from "react";
+import useQuiz from "../hooks/useQuiz";
 
-function Timer({ dispatch, secondsRemaining }) {
+function Timer() {
+  const { dispatch, secondsRemaining } = useQuiz();
+
   const minutes = Math.floor(secondsRemaining / 60);
   const seconds = secondsRemaining % 60;
 
   useEffect(() => {
-    if (secondsRemaining === 0) {
-      dispatch({ type: "finish" });
-      return;
-    }
-
     const id = setInterval(() => {
       dispatch({ type: "tick" });
     }, 1000);
 
     return () => clearInterval(id);
-  }, [dispatch, secondsRemaining]);
+  }, [dispatch]);
   return (
     <div className="timer">
       {minutes < 10 && "0"}
